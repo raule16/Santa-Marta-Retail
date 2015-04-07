@@ -2,9 +2,9 @@
 /**
  * Database configuration
  */
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'angularcode');
+define('DB_USERNAME', 'sumurdigital_sm');
+define('DB_PASSWORD', 'santa123');
+define('DB_HOST', 'www.sumurdigital.com');
+define('DB_NAME', 'sumurdig_smretail_pruebas');
 
 ?>
