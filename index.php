@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="es">
 
   <head>
 
@@ -23,7 +23,7 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-<base href="/Santa-Marta-Retail/">
+
               </head>
 
   <body ng-cloak="">
@@ -49,16 +49,8 @@
 
       </div>
     </body>
-  <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
+  <toaster-container toaster-options="{'time-out': 1000}"></toaster-container>
   <!-- Libs -->
-  <script src="js/angular.min.js"></script>
-  <script src="js/angular-route.min.js"></script>
-  <script src="js/angular-animate.min.js" ></script>
-  <script src="js/toaster.js"></script>
-  <script src="app/app.js"></script>
-  <script src="app/data.js"></script>
-  <script src="app/directives.js"></script>
-  <script src="app/authCtrl.js"></script>
-  <script src="controllers/home/homeIndexController.js"></script>
-  <script src="app/indexController.js"></script>
+  <script data-main="main.js" src="//marcoslin.github.io/angularAMD/js/lib/requirejs/require.js"></script>
+  <script src="../sm/js/mergeTable.js"></script>
 </html>

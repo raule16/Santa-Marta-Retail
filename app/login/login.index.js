@@ -1,0 +1,3 @@
+define([
+    './authCtrl',
+], function () {});
