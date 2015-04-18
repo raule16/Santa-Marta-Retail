@@ -1,6 +1,6 @@
 define(['angularAMD','descargar', 'angular-route','angular-animate','toaster',
-  'app/services/services.index'], function (angularAMD,descargar) {
-  var app = angular.module('sm', ['ngRoute', 'ngAnimate', 'toaster','sm.services']);
+  'app/services/services.index','ngTable'], function (angularAMD,descargar) {
+  var app = angular.module('sm', ['ngRoute', 'ngAnimate', 'toaster','sm.services','ngTable']);
   app.config(['$routeProvider','$locationProvider',
     function ($routeProvider,$locationProvider) {
 
