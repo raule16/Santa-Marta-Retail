@@ -1,7 +1,6 @@
 require.config({
 	baseUrl: "",
     paths: {
-    //'angular': 'js/angular.min',
     'angular': 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.21/angular.min',
     'angular-animate': 'js/angular-animate.min',
     'angular-resource': 'js/angular-resource.min',

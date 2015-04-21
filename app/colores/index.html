@@ -11,17 +11,13 @@
 <section>
     <div class="col-md-6">
     <div class="row">
-                  <table ng-table="tableParams" show-filter="true" class="table">
-        <tbody>
-          <tr ng-repeat="color in Colores">
-            <td data-title="'Id'" filter="{ 'idColor': 'number' }" sortable="idColor">
-                        <td>{{color.idColor}}</td>
-                </td>
-            <td data-title="'Nombre'" filter="{ 'nombreColor': 'text' }" sortable="nombreColor">
-                    <td>{{color.nombreColor}}</td>
-                </td>
-          </tr>
-        </tbody>
+                <table ng-table="tableParams" show-filter="true" class="table">
+                <tr ng-repeat="color in $data">
+                    <td data-title="'Id'" filter="{ 'idColor': 'text' }">{{color.idColor}}</td>
+                    <td data-title="'Nombre'" filter="{ 'nombreColor': 'text' }" >{{color.nombreColor}}</td>
+                    <td data-title="'ColorFs'" filter="{ 'colfsColor': 'text' }" >{{color.colfsColor}}</td>
+                    <td data-title="'ColorDescriptivo'" filter="{ 'colorDescriptivo': 'text' }" >{{color.colorDescriptivo}}</td>
+                </tr>
       </table>
         </div>
     </div>

@@ -53,5 +53,4 @@
   <toaster-container toaster-options="{'time-out': 1000}"></toaster-container>
   <!-- Libs -->
   <script data-main="main.js" src="//marcoslin.github.io/angularAMD/js/lib/requirejs/require.js"></script>
-  <script src="../sm/js/mergeTable.js"></script>
 </html>
