@@ -31,12 +31,14 @@ define(['angularAMD','descargar', 'angular-route','angular-animate','toaster',
             controllerUrl: 'app/colores/coloresIndexController',
             resolve: descargar('colores')
           }))
-             /* .when('/signup', {
-                  title: 'Signup',
-                  templateUrl: 'partials/signup.html',
-                  controller: 'authCtrl'
-              })
-              .when('/dashboard', {
+          . when('/sm/envios', angularAMD.route({
+            templateUrl: 'app/envios/index.html', 
+            controller: "enviosIndexController",
+            controllerUrl: 'app/envios/enviosIndexController',
+            resolve: descargar('envios')
+          }))
+          
+          /*    .when('/dashboard', {
                   title: 'Dashboard',
                   templateUrl: 'partials/dashboard.html',
                   controller: 'authCtrl'

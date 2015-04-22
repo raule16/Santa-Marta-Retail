@@ -1,0 +1,38 @@
+<div class="breadcrumbs" id="breadcrumbs">
+    <ul class="breadcrumb">
+        <li>
+            <i class="ace-icon fa fa-home home-icon"></i>
+            <a href="/sm">Inicio</a>
+        </li>
+        <li class="active">Envios</li>
+    </ul>
+</div>
+<div class="page-content">
+<section>
+    <div class="col-md-6">
+    <div class="row">
+                <table ng-table="tableParams" show-filter="true" class="table">
+                <tr ng-repeat="envio in $data">
+                    <td data-title="'Tienda'" filter="{ 'idTiendaEnvio': 'text' }">{{envio.idTiendaEnvio}}</td>
+                    <td data-title="'Numero'" filter="{ 'numeroEnvio': 'text' }" >{{envio.numeroEnvio}}</td>
+                    <td data-title="'Fecha'" filter="{ 'fechaEnvio': 'text' }" >{{envio.fechaEnvio}}</td>
+                    <td data-title="'Hora'" filter="{ 'horaEnvio': 'text' }" >{{envio.horaEnvio}}</td>
+                    <td data-title="'Prendas'" filter="{ 'prendasEnvio': 'text' }" >{{envio.prendasEnvio}}</td>
+                    <td data-title="'Base'" filter="{ 'baseEnvio': 'text' }" >{{envio.baseEnvio}}</td>
+                    <td data-title="'Iva'" filter="{ 'ivaEnvio': 'text' }" >{{envio.ivaEnvio}}</td>
+                    <td data-title="'Total'" filter="{ 'totalEnvio': 'text' }" >{{envio.totalEnvio}}</td>
+                    <td data-title="'Almacen'" filter="{ 'almacenEnvio': 'text' }" >{{envio.almacenEnvio}}</td>
+                    <td data-title="'Albaran'" filter="{ 'albaranEnvio': 'text' }" >{{envio.albaranEnvio}}</td>
+                    <td data-title="'Albaraneado'" filter="{ 'albaraneadoEnvio': 'text' }" >{{envio.albaraneadoEnvio}}</td>
+                    <td data-title="'Enviado'" filter="{ 'enviadoEnvio': 'text' }" >{{envio.enviadoEnvio}}</td>
+                    <td data-title="'Cerrado'" filter="{ 'acabadoEnvio': 'text' }" >{{envio.acabadoEnvio}}</td>
+                    <td data-title="'Dto'" filter="{ 'dctoEnvio': 'text' }" >{{envio.dctoEnvio}}</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> </td>
+                    <td class="text-center"><a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                </tr>
+      </table>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- /.page-content -->
