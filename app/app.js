@@ -38,6 +38,12 @@ define(['angularAMD','descargar', 'angular-route','angular-animate','toaster',
             controllerUrl: 'app/envios/enviosIndexController',
             resolve: descargar('envios')
           }))
+          .when('/sm/colores/nuevo', angularAMD.route({
+            templateUrl: 'app/colores/nuevo.html', 
+            controller: "enviosNuevoController",
+            controllerUrl: 'app/colores/enviosNuevoController',
+            resolve: descargar('colores')
+          }))
           
           /*    .when('/dashboard', {
                   title: 'Dashboard',

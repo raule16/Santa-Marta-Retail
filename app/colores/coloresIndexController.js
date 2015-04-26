@@ -1,7 +1,7 @@
 define(['angularAMD'], function (controllers) {
     'use strict';
     controllers.controller('coloresIndexController', [
-        '$scope','Data','ngTableParams','$filter', function ($scope,Data,ngTableParams,$filter) {
+        '$scope','Data','ngTableParams','$filter','$location', function ($scope,Data,ngTableParams,$filter,$location) {
           $scope.data=[];
                Data.get('colores').then(function (results) {
                   if (results.status=="success") {
@@ -12,6 +12,10 @@ define(['angularAMD'], function (controllers) {
                   }
               });
 
+            $scope.nuevoColor=function()
+            {
+              $location.path('/colores/nuevo');
+            }
 
             $scope.tableParams = new ngTableParams({
                 page: 1,            // show first page

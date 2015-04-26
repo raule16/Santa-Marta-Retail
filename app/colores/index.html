@@ -10,7 +10,9 @@
 <div class="page-content">
 <section>
     <div class="col-md-6">
+
     <div class="row">
+
                 <table ng-table="tableParams" show-filter="true" class="table">
                 <tr ng-repeat="color in $data">
                     <td data-title="'Id'" filter="{ 'idColor': 'text' }">{{color.idColor}}</td>
@@ -22,6 +24,7 @@
                 </tr>
       </table>
         </div>
+                <button type="button" ng-click="nuevoColor()" class="btn btn-default"><i class="fa fa-plus"></i>Nuevo</button>
     </div>
     </div>
 </section>

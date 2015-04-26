@@ -12,6 +12,7 @@
           <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
           <link href="http://bootswatch.com/paper/bootstrap.min.css" rel="stylesheet">
             <link href="css/custom.css" rel="stylesheet">
+            <link href="css/loading-bar.css" rel="stylesheet">
               <link href="css/toaster.css" rel="stylesheet">
               <link href="css/ng-table.min.css" rel="stylesheet">
                 <style>
