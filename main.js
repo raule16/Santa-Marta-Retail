@@ -10,7 +10,7 @@ require.config({
 	'toaster': 'js/toaster',
 	'loading-bar': 'js/loading-bar',
     'descargar': 'js/dependencyResolverFor',
-    'ngTable': 'js/ng-table.min'
+    'ngTable': 'js/ng-table.min',
     },
     shim: {
 	    'CombiMinScripts': {

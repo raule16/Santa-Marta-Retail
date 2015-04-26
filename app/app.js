@@ -1,9 +1,10 @@
 define(['angularAMD','descargar', 'angular-route','angular-animate','toaster',
-  'app/services/services.index','ngTable'], function (angularAMD,descargar) {
-  var app = angular.module('sm', ['ngRoute', 'ngAnimate', 'toaster','sm.services','ngTable']);
-  app.config(['$routeProvider','$locationProvider',
-    function ($routeProvider,$locationProvider) {
+  'app/services/services.index','ngTable','loading-bar'], function (angularAMD,descargar) {
+  var app = angular.module('sm', ['ngRoute', 'ngAnimate', 'toaster','sm.services','ngTable','angular-loading-bar']);
+  app.config(['cfpLoadingBarProvider','$httpProvider','$routeProvider','$locationProvider',
+    function (cfpLoadingBarProvider,$httpProvider,$routeProvider,$locationProvider) {
 
+        cfpLoadingBarProvider.includeSpinner = true;
 
           $routeProvider.
           when('/sm', angularAMD.route({

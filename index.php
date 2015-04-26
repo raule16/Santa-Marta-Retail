@@ -52,7 +52,7 @@
 
       </div>
     </body>
-  <toaster-container toaster-options="{'time-out': 1000}"></toaster-container>
+  <toaster-container toaster-options="{'time-out': 500}"></toaster-container>
   <!-- Libs -->
   <script data-main="main.js" src="//marcoslin.github.io/angularAMD/js/lib/requirejs/require.js"></script>
 </html>
