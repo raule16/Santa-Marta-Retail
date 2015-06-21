@@ -11,6 +11,7 @@ require.config({
 	'loading-bar': 'js/loading-bar',
     'descargar': 'js/dependencyResolverFor',
     'ngTable': 'js/ng-table.min',
+    'colorpicker': 'js/bootstrap-colorpicker-module.min'
     },
     shim: {
 	    'CombiMinScripts': {
@@ -38,6 +39,10 @@ require.config({
         },
         'loading-bar': {
             exports: 'loading-bar',
+            deps: ['angular']
+        },
+        'colorpicker': {
+            exports: 'colorpicker',
             deps: ['angular']
         }
     },

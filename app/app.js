@@ -1,46 +1,46 @@
 define(['angularAMD','descargar', 'angular-route','angular-animate','toaster',
-  'app/services/services.index','ngTable','loading-bar'], function (angularAMD,descargar) {
-  var app = angular.module('sm', ['ngRoute', 'ngAnimate', 'toaster','sm.services','ngTable','angular-loading-bar']);
+  'app/services/services.index','ngTable','loading-bar','colorpicker'], function (angularAMD,descargar) {
+  var app = angular.module('sm', ['ngRoute', 'ngAnimate', 'toaster','sm.services','ngTable','angular-loading-bar','colorpicker.module']);
   app.config(['cfpLoadingBarProvider','$httpProvider','$routeProvider','$locationProvider',
     function (cfpLoadingBarProvider,$httpProvider,$routeProvider,$locationProvider) {
 
         cfpLoadingBarProvider.includeSpinner = true;
 
           $routeProvider.
-          when('/sm', angularAMD.route({
-            templateUrl: 'sm/app/home/index.html', 
+          when('/', angularAMD.route({
+            templateUrl: 'app/home/index.html', 
             controller:'homeIndexController',
-            controllerUrl: 'sm/app/home/homeIndexController',
+            controllerUrl: 'app/home/homeIndexController',
             resolve: descargar('home')
            
           }))
-          .when('/sm/login', angularAMD.route({
+          .when('/login', angularAMD.route({
             templateUrl: 'app/login/login.html', 
             controller: "authCtrl",
             controllerUrl: 'app/login/authCtrl',
             resolve: descargar('login')
           }))
-          . when('/sm/tablasBase', angularAMD.route({
+          . when('/tablasBase', angularAMD.route({
             templateUrl: 'app/tablasBase/index.html', 
             controller: "tablasBaseIndexController",
             controllerUrl: 'app/tablasBase/tablasBaseIndexController',
             resolve: descargar('tablasBase')
           }))
-          . when('/sm/colores', angularAMD.route({
+          . when('/colores', angularAMD.route({
             templateUrl: 'app/colores/index.html', 
             controller: "coloresIndexController",
             controllerUrl: 'app/colores/coloresIndexController',
             resolve: descargar('colores')
           }))
-          . when('/sm/envios', angularAMD.route({
+          . when('/envios', angularAMD.route({
             templateUrl: 'app/envios/index.html', 
             controller: "enviosIndexController",
             controllerUrl: 'app/envios/enviosIndexController',
             resolve: descargar('envios')
           }))
-          .when('/sm/colores/nuevo', angularAMD.route({
+          .when('/colores/nuevo', angularAMD.route({
             templateUrl: 'app/colores/nuevo.html', 
-            controller: "enviosNuevoController",
+            controller: "coloresNuevoController",
             controllerUrl: 'app/colores/coloresNuevoController',
             resolve: descargar('colores')
           }))
@@ -64,7 +64,7 @@ define(['angularAMD','descargar', 'angular-route','angular-animate','toaster',
                   role: '0'
               })*/
               .otherwise({
-                  redirectTo: '/sm'
+                  redirectTo: '/'
               });
 
               // use the HTML5 History API

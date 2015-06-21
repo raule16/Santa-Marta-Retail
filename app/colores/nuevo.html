@@ -41,8 +41,7 @@
                         <span class="required" ng-show="form.ColorDescriptivo.$error.required"> *</span>
                     </label>
                     <div class="col-md-5">
-                        <input type="text" name="ColorDescriptivo" ng-model="ColorDescriptivo"
-                               maxlength="100" class="form-control" required />
+                        <input colorpicker type="text" ng-model="colorDescriptivo" />
                     </div>
                     <span class="error" ng-cloak
                           ng-show="!form.ColorDescriptivo.$pristine && form.ColorDescriptivo.$invalid">

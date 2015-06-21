@@ -15,6 +15,7 @@
             <link href="css/loading-bar.css" rel="stylesheet">
               <link href="css/toaster.css" rel="stylesheet">
               <link href="css/ng-table.min.css" rel="stylesheet">
+              <link href="css/colorpicker.min.css" rel="Stylesheet">
                 <style>
                   a {
                   color: orange;
@@ -27,7 +28,7 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
+<base href="/sm/" />
               </head>
 
   <body ng-cloak="">

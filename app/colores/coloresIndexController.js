@@ -14,7 +14,7 @@ define(['angularAMD'], function (controllers) {
 
             $scope.nuevoColor=function()
             {
-              $location.path('/colores/nuevo');
+              $location.path('colores/nuevo');
             }
 
             $scope.tableParams = new ngTableParams({
