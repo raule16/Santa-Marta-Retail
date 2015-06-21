@@ -41,7 +41,7 @@ define(['angularAMD','descargar', 'angular-route','angular-animate','toaster',
           .when('/sm/colores/nuevo', angularAMD.route({
             templateUrl: 'app/colores/nuevo.html', 
             controller: "enviosNuevoController",
-            controllerUrl: 'app/colores/enviosNuevoController',
+            controllerUrl: 'app/colores/coloresNuevoController',
             resolve: descargar('colores')
           }))
           
