@@ -85,7 +85,7 @@ define(['angularAMD','descargar', 'angular-route','angular-animate','toaster',
                       if (nextUrl == '/signup' || nextUrl == '/login') {
 
                       } else {
-                          $location.path("/sm/login");
+                          $location.path("/login");
                       }
                   }
               });

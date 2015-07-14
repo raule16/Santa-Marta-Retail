@@ -4,28 +4,37 @@
             <i class="ace-icon fa fa-home home-icon"></i>
             <a href="/sm">Inicio</a>
         </li>
+         <li>            
+            <a href="/sm/tablasBase">Tablas Base</a>
+        </li>
         <li class="active">Colores</li>
     </ul>
 </div>
 <div class="page-content">
 <section>
-    <div class="col-md-6">
+    <div class="col-md-8">
+        <div class="row">
 
-    <div class="row">
-
-                <table ng-table="tableParams" show-filter="true" class="table">
-                <tr ng-repeat="color in $data">
-                    <td data-title="'Id'" filter="{ 'idColor': 'text' }">{{color.idColor}}</td>
-                    <td data-title="'Nombre'" filter="{ 'nombreColor': 'text' }" >{{color.nombreColor}}</td>
-                    <td data-title="'ColorFs'" filter="{ 'colfsColor': 'text' }" >{{color.colfsColor}}</td>
-                    <td data-title="'ColorDescriptivo'" filter="{ 'colorDescriptivo': 'text' }" >{{color.colorDescriptivo}}</td>
-                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> </td>
-                    <td class="text-center"><a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
-                </tr>
-      </table>
+                    <table ng-table="tableParams" show-filter="true" class="table">
+                        <tr ng-repeat="color in $data">
+                            <td data-title="'Id'" filter="{ 'idColor': 'text' }">{{color.idColor}}</td>
+                            <td data-title="'Nombre'" filter="{ 'nombreColor': 'text' }" >{{color.nombreColor}}</td>
+                            <td data-title="'ColorFs'" filter="{ 'colfsColor': 'text' }" >{{color.colfsColor}}</td>
+                            <td data-title="'ColorDescriptivo'" filter="{ 'colorDescriptivo': 'text' }" >{{color.colorDescriptivo}}</td>
+                            <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> </td>
+                            <td class="text-center"><a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                        </tr>
+                    </table>
+            </div>                    
         </div>
-                <button type="button" ng-click="nuevoColor()" class="btn btn-default"><i class="fa fa-plus"></i>Nuevo</button>
     </div>
+    <div class="col-md-4 right">
+        <div class="well well-sm">
+            <h4>Acciones:</h4>
+        </div>
+        <ul class="nav">
+            <li><a ng-click="nuevoColor()"><i class="fa fa-plus"></i> Nuevo</a></li>
+        </ul>
     </div>
 </section>
 <!-- /.page-content -->
