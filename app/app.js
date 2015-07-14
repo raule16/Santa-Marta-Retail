@@ -1,6 +1,6 @@
 define(['angularAMD','descargar', 'angular-route','angular-animate','toaster',
   'app/services/services.index','ngTable','loading-bar','colorpicker'], function (angularAMD,descargar) {
-  var app = angular.module('sm', ['ngRoute', 'ngAnimate', 'toaster','sm.services','ngTable','angular-loading-bar','colorpicker.module']);
+  var app = angular.module('sm', ['ngRoute', 'ngAnimate', 'toaster','sm.services','ngTable','angular-loading-bar','ngAnimate','colorpicker.module']);
   app.config(['cfpLoadingBarProvider','$httpProvider','$routeProvider','$locationProvider',
     function (cfpLoadingBarProvider,$httpProvider,$routeProvider,$locationProvider) {
 
